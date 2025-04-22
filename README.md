@@ -64,7 +64,7 @@ animation:blink 1.5s ease-in-out infinite alternate;
 #wrap {background:none} /*PC用の背景はオフ*/
 
 /*背景を表示させる部分*/
-body::before {
+<!--body::before {
 content:"";
 display:block;
 position:fixed;
@@ -75,7 +75,16 @@ width:100%;
 height:100vh;
 background:url(https://torokoid.github.io/20250422_tochigi/20250421_004.JPG) center/cover no-repeat;
 -webkit-background-size:cover;/*Android4*/
-}
+}-->
+
+body {
+      background-image: url(https://torokoid.github.io/20250422_tochigi/20250421_004.JPG);
+      background-size: cover; /* 背景画像を全体に表示 */
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0;
+      padding: 0;
+    }
 
 a.p:hover {
 position: relative;
